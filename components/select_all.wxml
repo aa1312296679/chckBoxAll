@@ -1,0 +1,16 @@
+<!--全选按钮容器-->
+<view class="tr">
+  <view wx:for="{{titles}}" wx:key="{{index}}" class="th">
+    <checkbox wx:if="{{index==0}}" bindtap="selectAllTap" checked="{{selectAll}}" />{{item.name}}
+  </view>
+</view>
+<!--单选按钮容器-->
+<checkbox-group bindchange="checkboxChange">
+  <view class="tr" wx:for="{{listData}}" wx:key="">
+    <view class="td">
+      <checkbox value="{{item.id}}" checked="{{item.checked}}" />单选
+    </view>
+    <view class="td" value="{{item.text}}">{{item.id}}</view>
+    <view class="td" value="{{item.text}}">{{item.text}}</view>
+  </view>
+</checkbox-group>

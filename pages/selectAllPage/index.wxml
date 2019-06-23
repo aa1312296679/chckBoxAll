@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<!--全选-->
+<selectAll titles="{{selectAll['titles']}}" selectAll="{{selectAll['selectAll']}}" listData="{{selectAll['listData']}}" bind:selectAllTap="onselectAllTap"></selectAll>
+<!--提交-->
+<button class='btn'>{{button['buttonInfor']}}</button>
